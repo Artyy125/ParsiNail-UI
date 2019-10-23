@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,8 +26,7 @@ export function createTranslateLoader(http: HttpClient) {
         useFactory: createTranslateLoader,
         deps: [HttpClient]
       }
-    }),
-    NgbModule
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
