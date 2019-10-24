@@ -1,0 +1,4 @@
+{
+  "Api_BaseUrl": "localhost:14433/api",
+  "Identity_BaseUrl":"localhost:14330/api"
+}
